@@ -12,14 +12,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 # Click Functions
 def wait_span_click(driver: WebDriver, text: str, time: float=5.0, click: bool=True, scroll: bool=True, scrollTop: bool=False) -> WebElement | bool:
-    '''
-    Finds the span element with the given `text`.
-    - Returns `WebElement` if found, else `False` if not found.
-    - Clicks on it if `click = True`.
-    - Will spend a max of `time` seconds in searching for each element.
-    - Will scroll to the element if `scroll = True`.
-    - Will scroll to the top if `scrollTop = True`.
-    '''
+    
     if text:
         try:
             button = WebDriverWait(driver,time).until(EC.presence_of_element_located((By.XPATH, './/span[normalize-space(.)="'+text+'"]')))

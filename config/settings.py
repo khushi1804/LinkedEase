@@ -1,7 +1,5 @@
 
 
-###################################################### CONFIGURE YOUR BOT HERE ######################################################
-
 # >>>>>>>>>>> LinkedIn Settings <<<<<<<<<<<
 
 # Keep the External Application tabs open?

@@ -1,5 +1,5 @@
 
-
+'''
 ############### OLD CONFIG FILE - FOR REFERENCE FOR DEVELOPERS - DO NOT USE #################
 
 
@@ -53,16 +53,12 @@ search_terms = ["Software Engineer", "Software Developer", "Python Developer", "
 # Search location, this will be filled in "City, state, or zip code" search box. If left empty as "", tool will not fill it.
 search_location = ""               # Some valid examples: "", "United States", "India", "Chicago, Illinois, United States", "90001, Los Angeles, California, United States", "Bengaluru, Karnataka, India", etc.
 
-
-# >>>>>>>>>>> Job Search Filters <<<<<<<<<<<
-''' 
 You could set your preferences or leave them as empty to not select options except for 'True or False' options. Below are some valid examples for leaving them empty:
 
 question_1 = ""                    # answer1, answer2, answer3, etc.
 question_2 = []                    # (multiple select)
 question_3 = []                    # (dynamic multiple select)
 
-'''
 
 sort_by = ""                       # "Most recent", "Most relevant" or ("" to not select) 
 date_posted = "Past month"         # "Any time", "Past month", "Past week", "Past 24 hours" or ("" to not select)
@@ -191,16 +187,16 @@ current_experience = 5             # Integers > -2 (Ex: -1, 0, 1, 2, 3, 4...)
 ## Allow Manual Inputs
 # Should the tool pause before every submit application during easy apply to let you check the information?
 pause_before_submit = True         # True or False, Note: True or False are case-sensitive
-'''
+
 Note: Will be treated as False if `run_in_background = True`
-'''
+
 
 # Should the tool pause if it needs help in answering questions during easy apply?
 # Note: If set as False will answer randomly...
 pause_at_failed_question = True    # True or False, Note: True or False are case-sensitive
-'''
+
 Note: Will be treated as False if `run_in_background = True`
-'''
+
 ##
 
 # Keep the External Application tabs open? (Note: RECOMMENDED TO LEAVE IT AS TRUE, if you set it false, be sure to CLOSE ALL TABS BEFORE CLOSING THE BROWSER!!!)
@@ -218,9 +214,9 @@ connect_request_message = ""       # Leave Empty to send connection request with
 
 # Do you want the program to run continuously until you stop it? (Beta)
 run_non_stop = False               # True or False, Note: True or False are case-sensitive
-'''
+
 Note: Will be treated as False if `run_in_background = True`
-'''
+
 alternate_sortby = True            # True or False, Note: True or False are case-sensitive
 cycle_date_posted = True           # True or False, Note: True or False are case-sensitive
 stop_date_cycle_at_24hr = True     # True or False, Note: True or False are case-sensitive
@@ -240,34 +236,4 @@ chatGPT_resume_chat_title = "Resume review and feedback."
 # Give the path to the folder where all the generated resumes are to be stored
 generated_resume_path = "all resumes/"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-############################################################################################################
 '''
-THANK YOU for using my tool 😊! Wishing you the best in your job hunt 🙌🏻!
-
-Sharing is caring! If you found this tool helpful, please share it with your peers 🥺. Your support keeps this project alive.
-
-Support my work on <PATREON_LINK>. Together, we can help more job seekers.
-
-As an independent developer, I pour my heart and soul into creating tools like this, driven by the genuine desire to make a positive impact.
-
-Your support, whether through donations big or small or simply spreading the word, means the world to me and helps keep this project alive and thriving.
-
-Gratefully yours 🙏🏻,
-Sai Vignesh Golla
-'''
-############################################################################################################

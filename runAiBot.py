@@ -88,12 +88,7 @@ def is_logged_in_LN() -> bool:
 
 
 def login_LN() -> None:
-    '''
-    Function to login for LinkedIn
-    * Tries to login using given `username` and `password` from `secrets.py`
-    * If failed, tries to login using saved LinkedIn profile button if available
-    * If both failed, asks user to login manually
-    '''
+    
     # Find the username and password fields and fill them with user credentials
     driver.get("https://www.linkedin.com/login")
     try:
@@ -337,16 +332,7 @@ def get_job_description(
     str | None,
     str | None
     ]:
-    '''
-    # Job Description
-    Function to extract job description from About the Job.
-    ### Returns:
-    - `jobDescription: str | 'Unknown'`
-    - `experience_required: int | 'Unknown'`
-    - `skip: bool`
-    - `skipReason: str | None`
-    - `skipMessage: str | None`
-    '''
+    
     try:
         jobDescription = "Unknown"
         experience_required = "Unknown"
@@ -737,11 +723,6 @@ def discard_job() -> None:
     actions.send_keys(Keys.ESCAPE).perform()
     wait_span_click(driver, 'Discard', 2)
 
-
-
-
-
-
 # Function to apply to jobs
 def apply_to_jobs(search_terms: list[str]) -> None:
     applied_jobs = get_applied_job_ids()
@@ -1009,18 +990,7 @@ def main() -> None:
         
         linkedIn_tab = driver.current_window_handle
 
-        # # Login to ChatGPT in a new tab for resume customization
-        # if use_resume_generator:
-        #     try:
-        #         driver.switch_to.new_window('tab')
-        #         driver.get("https://chat.openai.com/")
-        #         if not is_logged_in_GPT(): login_GPT()
-        #         open_resume_chat()
-        #         global chatGPT_tab
-        #         chatGPT_tab = driver.current_window_handle
-        #     except Exception as e:
-        #         print_lg("Opening OpenAI chatGPT tab failed!")
-
+    
         # Start applying to jobs
         driver.switch_to.window(linkedIn_tab)
         total_runs = run(total_runs)
@@ -1066,7 +1036,7 @@ def main() -> None:
             "Obstacles are those frightful things you see when you take your eyes off your goal. - Henry Ford",
             "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt"
             ])
-        msg = f"\n{quote}\n\n\nBest regards,\nSai Vignesh Golla\nhttps://www.linkedin.com/in/saivigneshgolla/\n\n"
+        msg = f"\n{quote}\n\n\nBest regards,\nKhushi Singh\nhttps://www.linkedin.com/in/khushi-singh-3003951bb/\n\n"
         pyautogui.alert(msg, "Exiting..")
         print_lg(msg,"Closing the browser...")
         if tabs_count >= 10:

@@ -1,9 +1,5 @@
 
 
-
-###################################################### LINKEDIN SEARCH PREFERENCES ######################################################
-
-# These Sentences are Searched in LinkedIn
 # Enter your search terms inside '[ ]' with quotes ' "searching title" ' for each search followed by comma ', ' Eg: ["Software Engineer", "Software Developer", "Selenium Developer"]
 search_terms = ["Software Engineer", "Software Developer", "Python Developer", "Data Engineer", "React Developer", "Front End Developer", "Machine Learning Engineer", "Web Developer"]
 
@@ -16,23 +12,6 @@ switch_number = 5                 # Only numbers greater than 0... Don't put in 
 # Do you want to randomize the search order for search_terms?
 randomize_search_order = False     # True of False, Note: True or False are case-sensitive
 
-
-# >>>>>>>>>>> Job Search Filters <<<<<<<<<<<
-''' 
-You could set your preferences or leave them as empty to not select options except for 'True or False' options. Below are some valid examples for leaving them empty:
-This is below format: QUESTION = VALID_ANSWER
-
-## Examples of how to leave them empty. Note that True or False options cannot be left empty! 
-* question_1 = ""                    # answer1, answer2, answer3, etc.
-* question_2 = []                    # (multiple select)
-* question_3 = []                    # (dynamic multiple select)
-
-## Some valid examples of how to answer questions:
-* question_1 = "answer1"                  # "answer1", "answer2", "answer3" or ("" to not select). Answers are case sensitive.
-* question_2 = ["answer1", "answer2"]     # (multiple select) "answer1", "answer2", "answer3" or ([] to not select). Note that answers must be in [] and are case sensitive.
-* question_3 = ["answer1", "Random AnswER"]     # (dynamic multiple select) "answer1", "answer2", "answer3" or ([] to not select). Note that answers must be in [] and need not match the available options.
-
-'''
 
 sort_by = ""                       # "Most recent", "Most relevant" or ("" to not select) 
 date_posted = "Past week"         # "Any time", "Past month", "Past week", "Past 24 hours" or ("" to not select)
